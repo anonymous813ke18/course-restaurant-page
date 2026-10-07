@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/anonymous813ke18/course-restaurant-page/issues"
   },
-  "homepage": "https://github.com/anonymous813ke18/course-restaurant-page#readme"
+  "homepage": "https://github.com/anonymous813ke18/course-restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.111.1",
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^6.0.0"
+  }
 }
