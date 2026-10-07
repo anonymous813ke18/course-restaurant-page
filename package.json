@@ -1,0 +1,21 @@
+{
+  "name": "course-restaurant-page",
+  "version": "1.0.0",
+  "description": "This is my solution to the TENTH project from The Odin Project course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anonymous813ke18/course-restaurant-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/anonymous813ke18/course-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/anonymous813ke18/course-restaurant-page#readme"
+}
