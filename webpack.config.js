@@ -1,6 +1,7 @@
 import path from "node:path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import test from "node:test";
+import { watchFile } from "node:fs";
 
 export default {
     mode: "development",
@@ -15,6 +16,10 @@ export default {
             template: "./src/template.html",
         }),
     ],
+    devtool: "eval-source-map",
+    devServer: {
+        watchFiles: ["./src/template.html"],
+    },
     module: {
         rules: [
             {
