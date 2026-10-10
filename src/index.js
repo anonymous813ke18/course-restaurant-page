@@ -1,2 +1,2 @@
-alert("Check");
-console.log("check")
+import "./styles.css";
+
