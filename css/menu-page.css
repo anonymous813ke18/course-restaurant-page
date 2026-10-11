@@ -1,0 +1,36 @@
+.menu-heading {
+    font-size: var(--main-heading-fz);
+    letter-spacing: var(--main-heading-ls);
+    text-align: center;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.menu-items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu-item > img {
+    height: 300px;
+    width: 300px;
+    
+}
+
+.menu-item > h1 {
+    letter-spacing: 5px;
+}
