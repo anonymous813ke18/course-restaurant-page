@@ -13,7 +13,7 @@ function renderHomePage () {
     aboutVision.classList.add('about-vision');
 
     const visionHeader = document.createElement('h1');
-    visionHeader.textContent = 'ABOUT OUT VISION';
+    visionHeader.textContent = 'ABOUT OUR VISION';
     const visionPara = document.createElement('p');
     visionPara.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ratione deserunt veritatis recusandae, eos omnis libero sapiente! Placeat eos dicta fugit odit sequi reprehenderit ex? At iusto commodi totam praesentium modi quis possimus ea nisi qui ullam quisquam, eveniet deleniti in molestias assumenda ducimus atque esse sint similique facilis voluptates aspernatur harum! Dolor exercitationem non ullam, velit animi modi voluptatibus ipsum similique saepe iste cumque doloribus nulla perspiciatis dignissimos aspernatur, voluptas, aut expedita inventore dicta ea voluptatum nesciunt fuga deleniti! Esse commodi velit vero beatae nihil libero reprehenderit laudantium doloremque magnam quidem deserunt repellat eius amet assumenda perferendis, quod veritatis!';
     aboutVision.appendChild(visionHeader);
