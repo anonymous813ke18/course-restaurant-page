@@ -1,6 +1,7 @@
 import "./styles.css";
 import { renderHomePage } from "../js/home-page.js";
 import { renderMenuPage } from "../js/menu-page.js";
+import { renderContactPage } from "../js/contact-page.js";
 
 function contentController () {
     const header = document.querySelector("header");
@@ -93,7 +94,7 @@ function contentController () {
                 e.target.classList.add('selected');
             } else if (e.target.classList.contains("contact-btn")) {
                 content.replaceChildren();
-                // renderContactPage();
+                renderContactPage();
                 removeSelectedClass();
                 e.target.classList.add('selected');
             }
