@@ -1,5 +1,6 @@
 import "./styles.css";
 import { renderHomePage } from "../js/home-page.js";
+import { renderMenuPage } from "../js/menu-page.js";
 
 function contentController () {
     const header = document.querySelector("header");
@@ -18,14 +19,14 @@ function contentController () {
         menuBtn.classList.add("nav-btn", "menu-btn");
         menuBtn.textContent = "Menu";
 
-        const aboutBtn = document.createElement("button");
-        aboutBtn.classList.add("nav-btn", "about-btn");
-        aboutBtn.textContent = "About";
+        const contactBtn = document.createElement("button");
+        contactBtn.classList.add("nav-btn", "contact-btn");
+        contactBtn.textContent = "Contact";
 
         nav.appendChild(logo);
         nav.appendChild(homeBtn);
         nav.appendChild(menuBtn);
-        nav.appendChild(aboutBtn);
+        nav.appendChild(contactBtn);
 
         header.appendChild(nav);
     }
@@ -65,6 +66,13 @@ function contentController () {
         footer.appendChild(para);
     }
 
+    function removeSelectedClass () {
+        const navBtns = document.querySelectorAll('.nav-btn');
+        navBtns.forEach(navBtn => {
+            navBtn.classList.remove('selected');
+        })
+    }
+
     function addEventListeners () {
         const nav = document.querySelector("nav");
 
@@ -76,13 +84,25 @@ function contentController () {
                 // Code to render home-page
                 content.replaceChildren();
                 renderHomePage();
+                removeSelectedClass();
+                e.target.classList.add('selected');
+            } else if (e.target.classList.contains("menu-btn")) {
+                content.replaceChildren();
+                renderMenuPage();
+                removeSelectedClass();
+                e.target.classList.add('selected');
+            } else if (e.target.classList.contains("contact-btn")) {
+                content.replaceChildren();
+                // renderContactPage();
+                removeSelectedClass();
+                e.target.classList.add('selected');
             }
         })
     }
 
     createHeader();
     addEventListeners();
-    // renderHomePage();
+    renderHomePage();
     createFooter();
 }
 
