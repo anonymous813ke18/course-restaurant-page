@@ -25,6 +25,10 @@
     overflow: hidden;
 }
 
+.menu-item:hover {
+    box-shadow: 0px 0px 5px 5px lightgray;
+}
+
 .menu-item > img {
     height: 300px;
     width: 300px;
