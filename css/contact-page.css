@@ -1,0 +1,46 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 25px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+form > label {
+    font-size: 12pt;
+    letter-spacing: 2px;
+}
+
+form > input,
+form > textarea {
+    padding: 5px;
+    font-size: 14pt;
+    width: 30ch;
+}
+
+form > button {
+    padding: 10px;
+    font-size: 16pt;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    color: var(--grey-bg-color);
+    background-color: white;
+}
+
+form > button:hover {
+    color: white;
+    background-color: var(--grey-bg-color);
+    cursor: pointer;
+    transition: 150ms;
+}
+
+form > button:active {
+    background-color: var(--lightgrey-bg-color);
+    transition: 150ms;
+}
